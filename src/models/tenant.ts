@@ -26,4 +26,6 @@ const tenantSchema = new Schema<Itenant>({
     },
 })
 
-export const TenantModel: Model<Itenant>= mongoose.model<Itenant>("Tenant", tenantSchema);
+const Tenant: Model<Itenant> = mongoose.model<Itenant>("Tenant", tenantSchema);
+
+export default Tenant
